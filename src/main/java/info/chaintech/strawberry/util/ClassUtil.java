@@ -10,4 +10,13 @@ public class ClassUtil {
         // todo
         return null;
     }
+
+    /**
+     * 获取ClassLoader
+     *
+     * @return class loader
+     */
+    public static ClassLoader getClassLoader() {
+        return Thread.currentThread().getContextClassLoader();
+    }
 }
