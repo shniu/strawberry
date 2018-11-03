@@ -9,7 +9,7 @@ import java.lang.reflect.Field;
 import java.util.*;
 
 /**
- * 初始化 IoC 容器
+ * 初始化 IoC 容器, 对需要注入的实例进行注入
  * <p>
  * Created by shniu on 2018/10/27.
  */
@@ -26,10 +26,11 @@ public class IoCHelper {
 
                 // 获取 bean 中所有的字段
                 Field[] beanFields = beanClass.getDeclaredFields();
-                List<Field> beanFieldList = new ArrayList<>(beanFields.length);
+                List<Field> beanFieldList = new ArrayList<>();
                 Collections.addAll(beanFieldList, beanFields);
                 beanFieldList.forEach(field -> {
-                    // 判断 Field 是否被 Inject 注解修饰
+                    // 判断 Field 是否被 Inject 注解修饰,
+                    // 如果被 Inject 修饰, 就由容器进行动态注入，这是 IoC 的第二个核心
                     if (field.isAnnotationPresent(Inject.class)) {
                         // Bean 字段对应的接口
                         Class<?> interfaceClass = field.getType();

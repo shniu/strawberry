@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 扫描获取 Bean 声明, 并初始化 Bean 对象，这是 IoC 的第二个核心
+ * <p>
  * Created by shniu on 2018/10/26.
  */
 public class BeanHelper {
@@ -21,6 +23,7 @@ public class BeanHelper {
             List<Class<?>> classList = ClassHelper.getClassList();
             for (Class<?> cls : classList) {
                 // 处理有特定注解的类
+                // todo add other annotation
                 if (cls.isAnnotationPresent(Bean.class)
                         || cls.isAnnotationPresent(Service.class)) {
                     // 创建 Bean 实例
