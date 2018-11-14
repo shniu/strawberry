@@ -1,6 +1,6 @@
-package info.chaintech.strawberry.simple.ioc;
+package info.chaintech.strawberry.ioc;
 
-import info.chaintech.strawberry.simple.ioc.bean.BeanDefine;
+import info.chaintech.strawberry.ioc.bean.BeanDefine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,9 +13,9 @@ import java.util.Map;
  * Created by shniu on 2018/11/11.
  */
 
-public class SimpleIoC implements IoC {
+public class DefaultIoC implements IoC {
 
-    private Logger logger = LoggerFactory.getLogger(SimpleIoC.class);
+    private Logger logger = LoggerFactory.getLogger(DefaultIoC.class);
 
     /**
      * Bean pool，实际存放 bean 及其定义的地方

@@ -1,8 +1,8 @@
-package info.chaintech.strawberry.simple.ioc;
+package info.chaintech.strawberry.ioc;
 
-import info.chaintech.strawberry.simple.ioc.bean.ClassInfo;
-import info.chaintech.strawberry.simple.ioc.reader.ClassPathClassReader;
-import info.chaintech.strawberry.simple.ioc.reader.JarClassReader;
+import info.chaintech.strawberry.ioc.reader.ClassPathClassReader;
+import info.chaintech.strawberry.ioc.reader.JarClassReader;
+import info.chaintech.strawberry.ioc.bean.ClassInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

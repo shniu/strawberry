@@ -1,4 +1,4 @@
-package info.chaintech.strawberry.simple.ioc;
+package info.chaintech.strawberry.ioc;
 
 /**
  * 注入器接口

@@ -1,4 +1,4 @@
-package info.chaintech.strawberry.simple.ioc.bean;
+package info.chaintech.strawberry.ioc.bean;
 
 /**
  * Bean 定义，描述一个 Bean

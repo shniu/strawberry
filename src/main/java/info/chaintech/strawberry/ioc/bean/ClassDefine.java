@@ -1,4 +1,4 @@
-package info.chaintech.strawberry.simple.ioc.bean;
+package info.chaintech.strawberry.ioc.bean;
 
 /**
  * Created by shniu on 2018/11/11.

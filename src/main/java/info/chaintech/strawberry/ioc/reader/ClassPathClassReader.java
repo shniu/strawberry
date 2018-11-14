@@ -1,8 +1,8 @@
-package info.chaintech.strawberry.simple.ioc.reader;
+package info.chaintech.strawberry.ioc.reader;
 
-import info.chaintech.strawberry.simple.ioc.ClassReader;
-import info.chaintech.strawberry.simple.ioc.bean.ClassInfo;
-import info.chaintech.strawberry.simple.ioc.bean.Scanner;
+import info.chaintech.strawberry.ioc.ClassReader;
+import info.chaintech.strawberry.ioc.bean.ClassInfo;
+import info.chaintech.strawberry.ioc.bean.Scanner;
 
 import java.util.Set;
 

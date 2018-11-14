@@ -1,6 +1,6 @@
-package info.chaintech.strawberry.simple.ioc;
+package info.chaintech.strawberry.ioc;
 
-import info.chaintech.strawberry.simple.ioc.bean.BeanDefine;
+import info.chaintech.strawberry.ioc.bean.BeanDefine;
 
 import java.util.Map;
 

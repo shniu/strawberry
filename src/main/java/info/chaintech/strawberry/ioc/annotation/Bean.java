@@ -1,4 +1,4 @@
-package info.chaintech.strawberry.simple.ioc.annotation;
+package info.chaintech.strawberry.ioc.annotation;
 
 import java.lang.annotation.*;
 
