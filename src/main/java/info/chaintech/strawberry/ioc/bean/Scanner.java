@@ -1,5 +1,8 @@
 package info.chaintech.strawberry.ioc.bean;
 
+import lombok.Builder;
+import lombok.Data;
+
 import java.lang.annotation.Annotation;
 
 /**
@@ -7,6 +10,9 @@ import java.lang.annotation.Annotation;
  * <p>
  * Created by shniu on 2018/11/11.
  */
+
+@Data
+@Builder
 public class Scanner {
 
     /**
@@ -28,47 +34,4 @@ public class Scanner {
      * 获取指定包名中指定注解的相关类
      */
     private Class<? extends Annotation> annotation;
-
-
-    public String getPackageName() {
-        return packageName;
-    }
-
-    public void setPackageName(String packageName) {
-        this.packageName = packageName;
-    }
-
-    public boolean isRecursive() {
-        return recursive;
-    }
-
-    public void setRecursive(boolean recursive) {
-        this.recursive = recursive;
-    }
-
-    public Class<?> getParent() {
-        return parent;
-    }
-
-    public void setParent(Class<?> parent) {
-        this.parent = parent;
-    }
-
-    public Class<? extends Annotation> getAnnotation() {
-        return annotation;
-    }
-
-    public void setAnnotation(Class<? extends Annotation> annotation) {
-        this.annotation = annotation;
-    }
-
-    @Override
-    public String toString() {
-        return "Scanner{" +
-                "packageName='" + packageName + '\'' +
-                ", recursive=" + recursive +
-                ", parent=" + parent +
-                ", annotation=" + annotation +
-                '}';
-    }
 }

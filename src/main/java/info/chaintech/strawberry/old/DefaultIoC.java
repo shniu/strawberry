@@ -1,6 +1,6 @@
-package info.chaintech.strawberry.ioc;
+package info.chaintech.strawberry.old;
 
-import info.chaintech.strawberry.ioc.bean.BeanDefine;
+import info.chaintech.strawberry.old.bean.BeanDefine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

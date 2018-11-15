@@ -1,15 +1,15 @@
 package info.chaintech.strawberry.ioc.bean;
 
 /**
- * Bean 定义，描述一个 Bean
- *
- * Created by shniu on 2018/11/11.
+ * Bean define
+ * Created by Administrator on 2018/11/15 0015.
  */
+
 public class BeanDefine {
 
-    private Object bean;
     private Class<?> type;
-    private boolean isSingle;
+    private Object bean;
+    private boolean singleton;
 
     public BeanDefine(Object bean) {
         this(bean, bean.getClass());
@@ -18,21 +18,13 @@ public class BeanDefine {
     public BeanDefine(Object bean, Class<?> type) {
         this.bean = bean;
         this.type = type;
-        this.isSingle = true;
+        this.singleton = true;
     }
 
-    public BeanDefine(Object bean, Class<?> type, boolean isSingle) {
-        this.bean = bean;
+    public BeanDefine(Class<?> type, Object bean, boolean singleton) {
         this.type = type;
-        this.isSingle = isSingle;
-    }
-
-    public Object getBean() {
-        return bean;
-    }
-
-    public void setBean(Object bean) {
         this.bean = bean;
+        this.singleton = singleton;
     }
 
     public Class<?> getType() {
@@ -43,20 +35,28 @@ public class BeanDefine {
         this.type = type;
     }
 
-    public boolean isSingle() {
-        return isSingle;
+    public Object getBean() {
+        return bean;
     }
 
-    public void setSingle(boolean single) {
-        isSingle = single;
+    public void setBean(Object bean) {
+        this.bean = bean;
+    }
+
+    public boolean isSingleton() {
+        return singleton;
+    }
+
+    public void setSingleton(boolean singleton) {
+        this.singleton = singleton;
     }
 
     @Override
     public String toString() {
         return "BeanDefine{" +
-                "bean=" + bean +
-                ", type=" + type +
-                ", isSingle=" + isSingle +
+                "type=" + type +
+                ", bean=" + bean +
+                ", singleton=" + singleton +
                 '}';
     }
 }

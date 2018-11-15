@@ -1,16 +1,20 @@
 package info.chaintech.strawberry.ioc;
 
+
+import info.chaintech.strawberry.ioc.bean.BeanDefine;
+
+import java.util.Map;
+
 /**
- * 注入器接口
- *
- * Created by shniu on 2018/11/11.
+ * Injector
+ * Created by Administrator on 2018/11/15 0015.
  */
 public interface Injector {
 
     /**
-     * 注入bean
+     * Get all beans in the IoC
      *
-     * @param bean bean 实例
+     * @return bean map
      */
-    void injection(Object bean);
+    Map<String, BeanDefine> getBeans();
 }

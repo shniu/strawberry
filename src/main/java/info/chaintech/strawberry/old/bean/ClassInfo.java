@@ -1,4 +1,4 @@
-package info.chaintech.strawberry.ioc.bean;
+package info.chaintech.strawberry.old.bean;
 
 /**
  * 类信息

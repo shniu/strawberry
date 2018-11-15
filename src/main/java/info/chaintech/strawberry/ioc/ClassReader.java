@@ -1,23 +1,19 @@
 package info.chaintech.strawberry.ioc;
 
+import info.chaintech.strawberry.ioc.bean.ClassDesc;
 import info.chaintech.strawberry.ioc.bean.Scanner;
-import info.chaintech.strawberry.ioc.bean.ClassInfo;
 
 import java.util.Set;
 
 /**
- * 读取类的接口
- * <p>
- * Created by shniu on 2018/11/11.
+ * Class reader interface
+ *
+ * Created by Administrator on 2018/11/15 0015.
  */
 public interface ClassReader {
 
     /**
-     * 读取类
-     *
-     * @param scanner 扫描类的元信息
-     * @return 扫描到的所有类信息
+     * Scan and read the bean and put them in the container
      */
-    Set<ClassInfo> readClasses(Scanner scanner);
-
+    Set<ClassDesc> read(Scanner scanner);
 }

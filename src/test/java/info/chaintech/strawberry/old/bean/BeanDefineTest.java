@@ -1,4 +1,4 @@
-package info.chaintech.strawberry.ioc.bean;
+package info.chaintech.strawberry.old.bean;
 
 import org.junit.After;
 import org.junit.Before;
